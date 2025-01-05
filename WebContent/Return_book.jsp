@@ -164,5 +164,12 @@
 		<input type="submit" value="Submit">
 	</form>
 </center>
+<script>
+    // Detect page refresh
+    if (performance.navigation.type === 1) {
+        // If the page is reloaded, redirect to again this page with retried data
+        window.location.href = "./DataFetch2";
+    }
+</script>
 </body>
 </html>
